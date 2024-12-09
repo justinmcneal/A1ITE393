@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         val titleText = findViewById<TextView>(R.id.tvTitle)
 
         tapMessage.visibility = TextView.INVISIBLE
-        titleText.visibility = TextView.INVISIBLE 
+        titleText.visibility = TextView.INVISIBLE
 
         val screenWidth = resources.displayMetrics.widthPixels.toFloat()
 
