@@ -16,14 +16,14 @@ class Adapter(private val dataList: ArrayList<recyclerData>) : RecyclerView.Adap
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.cardview, parent, false) // Inflate the new card_item.xml
+            .inflate(R.layout.cardview, parent, false)
         return ViewHolder(view)
     }
 
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = dataList[position]
-        holder.textView.text = item.title // Bind the title from recyclerData to the TextView
+        holder.textView.text = item.title
     }
 
 
